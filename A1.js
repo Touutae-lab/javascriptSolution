@@ -22,11 +22,10 @@ function accum(s) {
 }
 
 
-// testcase
-// const main = () => {
-//     let s = 'abcd'
-//     let result = accum(s)
-//     console.log(result)
-// }
+const main = () => {
+    let s = 'abcd'
+    let result = accum(s)
+    console.log(result)
+}
 
-// main()
+main()

@@ -21,3 +21,6 @@ function removeParentheses(s){
     }
     return result;
   }
+
+
+console.log(removeParentheses("example(unwanted thing)example"))

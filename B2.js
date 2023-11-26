@@ -9,7 +9,7 @@ function rot90Clock(strng) {
 }
 
 function diag1Sym(strng) {
-    const lines = s.split('\n');
+    const lines = strng.split('\n');
     const result = Array.from({length: lines.length}, (_, i) => {
         return Array.from({length: lines.length}, (_, j) => {
             return lines[j][i]
@@ -19,7 +19,7 @@ function diag1Sym(strng) {
 }
 
 function selfieAndDiag1(strng) {
-    const lines = s.split('\n');
+    const lines = strng.split('\n');
     const result = lines.map((line, i) => line + '|' + diag1Sym(s).split('\n')[i]).join('\n');
     return result;
 }
@@ -30,7 +30,8 @@ function oper(fct, s) {
 
 
 function main() {
-    console.log(rot90Clock("rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb"))
+    console.log(rot90Clock("abc\ndef\nghi"))
+    console.log(diag1Sym("abc\ndef\nghi"))
 }
 
 main()

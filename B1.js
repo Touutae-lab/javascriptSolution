@@ -30,13 +30,6 @@ function testRegEx() {
     console.log(mesh[1])
 
 
-    word1 = 'jamestown'
-    word2 = 'ownership'
-    word3 = 'ownerstore'
-    word4 = 'ownerlip'
-
-    mesh = (word1 + ' ' + word2 + ' ' + word3 + ' ' + word4).match(/(.+)(?=\1\1\1)/)
-    console.log(mesh[1])
 }
 
 function main() {
